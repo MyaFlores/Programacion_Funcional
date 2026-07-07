@@ -8,6 +8,16 @@ data class Alumno(
     val grupo: String,
     val matricula: Int
 )
+val saldo = 500.0
+val precio = 300.0
+val tieneTarjeta = true
+val creditoDisponible = 200.0
+
+// Expresión lógica compleja
+val puedeComprar = (saldo >= precio) || (tieneTarjeta && creditoDisponible >= precio)
+
+// Evaluación: (500.0 >= 300.0) || (true && 200.0 >= 300.0)
+
 
 fun main(){
     //Funcion normal
